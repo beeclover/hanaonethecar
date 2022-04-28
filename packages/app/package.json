@@ -10,11 +10,13 @@
     "ts-node": "ts-node --compiler-options '{\\\"module\\\":\\\"commonjs\\\"}'"
   },
   "dependencies": {
+    "keen-slider": "^6.6.10",
     "next": "12.1.5",
-    "react": "18.1.0",
+    "react": "^18.1.0",
     "react-dom": "18.1.0"
   },
   "devDependencies": {
+    "@headlessui/react": "^1.6.0",
     "@tailwindcss/aspect-ratio": "^0.4.0",
     "@tailwindcss/line-clamp": "^0.4.0",
     "@tailwindcss/typography": "^0.5.2",
@@ -23,12 +25,15 @@
     "@types/react-dom": "18.0.0",
     "@types/tailwindcss": "^3.0.10",
     "autoprefixer": "^10.4.5",
+    "classnames": "^2.3.1",
     "eslint": "8.14.0",
     "eslint-config-next": "12.1.5",
+    "lodash": "^4.17.21",
     "postcss": "^8.4.12",
     "sass": "^1.51.0",
     "tailwindcss": "^3.0.24",
-    "typescript": "4.6.3"
+    "typescript": "4.6.3",
+    "usehooks-ts": "^2.5.1"
   },
   "prisma": {
     "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"

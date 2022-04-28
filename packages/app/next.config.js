@@ -5,18 +5,10 @@ const nextConfig = {
   images: {
   },
   sassOptions: {
-    includePaths: [path.join(__dirname, 'src/styles')],
+    includePaths: [path.join(__dirname, 'styles')],
   },
   experimental: {
     outputStandalone: true,
-  },
-  webpackDevMiddleware: config => {
-    config.watchOptions = {
-      poll: 1000,
-      aggregateTimeout: 300,
-    }
-
-    return config
   },
 }
 
