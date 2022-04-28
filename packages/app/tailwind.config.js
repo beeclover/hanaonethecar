@@ -17,6 +17,9 @@ module.exports = {
           DEFAULT: "var(--container-px, 1rem)",
         },
       },
+      fontFamily: {
+        sans: ['"Pretendard"', ...defaultTheme.fontFamily.sans],
+      },
     },
   },
   plugins: [
