@@ -1,7 +1,9 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Home from '~/components/template/Home';
 
-const Home: NextPage = () => {
+
+const index: NextPage = () => {
   return (
     <>
       <Head>
@@ -10,13 +12,14 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='w-full bg-black py-[30px]'>
+      <header className="absolute"></header>
+      <main className="pt-[60px]">
+        <Home />
       </main>
-
       <footer>
       </footer>
     </>
   )
 }
 
-export default Home
+export default index

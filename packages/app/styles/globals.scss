@@ -1,9 +1,16 @@
+html {
+  font-size: 80%;
+  @media (min-width: theme('screens.md')) {
+    font-size: 100%;
+  }
+}
+
 html,
 body {
   @apply font-sans;
 }
 
-main {
+#__next {
   @apply mx-auto;
   min-height: calc(100vh);
   // 임시 모바일만 적용
@@ -17,4 +24,8 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+:root {
+  --container-px: 2rem;
 }

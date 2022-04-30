@@ -14,11 +14,11 @@ module.exports = {
       container: {
         center: true,
         padding: {
-          DEFAULT: "var(--container-px, 1rem)",
+          DEFAULT: "var(--container-px, 2rem)",
         },
       },
       fontFamily: {
-        sans: ['"Pretendard"', ...defaultTheme.fontFamily.sans],
+        sans: ['"Hana"', '"Pretendard"', ...defaultTheme.fontFamily.sans],
       },
     },
   },
