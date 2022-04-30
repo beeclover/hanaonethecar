@@ -1,3 +1,29 @@
 .bg-slide1 {
   background-image: linear-gradient(116deg, #72e5de, #12bbbd 99%);
 };
+
+.slider {
+}
+
+.dots {
+  @apply px-[30px] gap-x-[8px];
+  position: absolute;
+  bottom: 25px;
+  display: flex;
+  list-style: none;
+
+  [class~="slick-active"] .dotInner{ // target child class
+    opacity: 1;
+ }
+}
+
+.dot {
+}
+
+.dotInner {
+  background: #fff;
+  width: .6rem;
+  height: .6rem;
+  opacity: 0.2;
+  border-radius: 999px;
+}
