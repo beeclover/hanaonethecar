@@ -1,16 +1,22 @@
 version: "3.9"
 
 services:
-  app:
+  # app:
+  #   ports:
+  #     - 3000:3000
+  #   image: hanaonethecar
+  #   build:
+  #     context: packages/app
+  #     dockerfile: Dockerfile
+  #   volumes:
+  #     - ./packages/app:/usr/src/app
+  #     - /usr/src/app/node_modules
+  #     - /usr/src/app/.next
+  #   env_file:
+  #     - .env
+  db:
+    image: postgres
     ports:
-      - 3000:3000
-    image: hanaonethecar
-    build:
-      context: packages/app
-      dockerfile: Dockerfile
-    volumes:
-      - ./packages/app:/usr/src/app
-      - /usr/src/app/node_modules
-      - /usr/src/app/.next
-    env_file:
-      - .env
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: 1
