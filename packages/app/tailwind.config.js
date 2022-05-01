@@ -18,7 +18,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ['"Hana"', '"Pretendard"', ...defaultTheme.fontFamily.sans],
+        sans: ['"Hana"', ...defaultTheme.fontFamily.sans],
       },
     },
   },
