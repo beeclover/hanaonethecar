@@ -1,10 +1,12 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+
+// components
+
 import Layout from '~/components/Layout';
 import Home from '~/components/template/Home';
 
-
-const index: NextPage = () => {
+const HomePage: NextPage = () => {
   return (
     <>
       <Head>
@@ -19,4 +21,4 @@ const index: NextPage = () => {
   )
 }
 
-export default index
+export default HomePage
