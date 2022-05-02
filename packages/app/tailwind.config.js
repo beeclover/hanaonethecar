@@ -16,6 +16,9 @@ module.exports = {
         padding: {
           DEFAULT: "var(--container-px, 2rem)",
         },
+        screens: {
+          sm: '640px',
+        }
       },
       fontFamily: {
         sans: ['"Hana"', ...defaultTheme.fontFamily.sans],

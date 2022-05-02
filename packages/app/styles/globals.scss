@@ -13,8 +13,6 @@ body {
 #__next {
   @apply mx-auto;
   min-height: calc(100vh);
-  // 임시 모바일만 적용
-  max-width: 640px;
 }
 
 a {
