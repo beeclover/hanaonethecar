@@ -1,6 +1,5 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { gql, useQuery } from '@apollo/client';
 
 // components
 
@@ -8,17 +7,6 @@ import Layout from '~/components/Layout';
 import Home from '~/components/template/Home';
 
 const HomePage: NextPage = () => {
-  const { data, loading, error } = useQuery(gql`
-    query {
-      ok
-    }
-  `);
-
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error :( {error.message}</p>;
-
-  console.log(data);
-
   return (
     <>
       <Head>

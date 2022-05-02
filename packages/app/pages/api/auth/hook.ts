@@ -1,5 +1,3 @@
-// pages/api/auth/hook
-import prisma from '~/lib/prisma';
 import type { NextApiRequest, NextApiResponse } from 'next';
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
@@ -14,10 +12,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   }
   // 3
   if (email) {
-    // 4
-    await prisma.user.create({
-      data: { email },
-    });
+
     return res.status(200).json({
       message: `User with email: ${email} has been created successfully!`,
     });
