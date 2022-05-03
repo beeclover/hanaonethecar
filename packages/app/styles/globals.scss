@@ -1,5 +1,8 @@
 html {
-  font-size: 80%;
+  font-size: 74%;
+  @media (min-width: theme('screens.sm')) {
+    font-size: 80%;
+  }
   @media (min-width: theme('screens.md')) {
     font-size: 100%;
   }
@@ -8,6 +11,10 @@ html {
 html,
 body {
   @apply font-sans;
+}
+
+body {
+  @apply font-sans bg-[#FEFEFE];
 }
 
 #__next {
@@ -25,5 +32,5 @@ a {
 }
 
 :root {
-  --container-px: 2rem;
+  --container-px: 20px;
 }

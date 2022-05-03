@@ -1,0 +1,21 @@
+.ol {
+  counter-reset: list;
+  list-style: none;
+  line-height: 1;
+
+  :global(li)::before {
+    counter-increment: list;
+    content: counter(list);
+    width: 1.8em;
+    height: 1.8em;
+    display: inline-flex;
+    background-color: black;
+    color: #fff;
+    line-height: 1;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    margin-right: 6px;
+    font-weight: bold;
+  }
+}

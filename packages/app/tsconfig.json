@@ -22,6 +22,12 @@
     "paths": {
       "~/*": [
         "./*"
+      ],
+      "~atom/*": [
+        "./components/atoms/*"
+      ],
+      "~molecule/*": [
+        "./components/molecules/*"
       ]
     }
   },
