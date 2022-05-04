@@ -7,7 +7,7 @@ type props = {
 }
 const Card = ({ children, className }: props) => {
   return (
-    <div className={cx("gap-x-[9px] bg-white shadow-[0_0_20px_0_rgba(0,0,0,0.06)] rounded-[20px] p-[30px] grid", className)}>
+    <div className={cx("gap-x-[9px] bg-white shadow-[0_0_20px_0_rgba(0,0,0,0.06)] border-[0.5px] border-[#ccc] rounded-[20px] p-[30px] grid", className)}>
       {children}
     </div>
   );

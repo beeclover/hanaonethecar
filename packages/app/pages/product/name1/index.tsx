@@ -1,4 +1,3 @@
-import type { NextPage } from 'next'
 import Head from 'next/head'
 import cx from "classnames";
 import { Disclosure } from '@headlessui/react'
@@ -11,7 +10,7 @@ import Card from "~atom/Card";
 import style from "./index.module.scss";
 import List from "~atom/List";
 
-const name1 = () => {
+const index = () => {
   return (
     <>
       <Head>
@@ -130,4 +129,4 @@ const name1 = () => {
   );
 };
 
-export default name1;
+export default index;

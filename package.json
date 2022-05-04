@@ -1,0 +1,9 @@
+{
+  "name": "202205__hanaonethecar",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:beeclover/hanaonethecar.git",
+  "author": "Hansanghyeon <999@hyeon.pro>",
+  "license": "MIT",
+  "private": true
+}

@@ -1,0 +1,13 @@
+.stepList {
+  counter-reset: list;
+  list-style: none;
+  line-height: 1;
+  padding: 0;
+
+  :global(li)::before {
+    @apply text-primary;
+    counter-increment: list;
+    content: 'Step' counter(list);
+    font-weight: bold;
+  }
+}
